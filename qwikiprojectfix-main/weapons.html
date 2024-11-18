@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Weapons</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<style>
+* { box-sizing: border-box;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Quake;
+    src: url(dpquake_.ttf);
+}
+
+@font-face {
+    font-family: Rubik;
+    src: url(Rubik-Medium.ttf);
+    
+}
+
+#gallery { position: relative; }
+figure { position: absolute;
+         left: 280px;
+		 text-align: center;
+		 opacity: .25; }
+#gallery ul { width: 300px; 
+              list-style-type: none;
+}
+#gallery li { display: inline; 
+              float: left;
+			  padding: 10px;
+}
+#gallery img { border-style: none; }
+#gallery a { 
+             text-decoration: none; 
+			 font-style: italic;
+}
+#gallery span { position: absolute; 
+                left: -1000px;
+				opacity: 0;
+                transition: opacity 3s ease-in-out; 
+}
+#gallery a:hover span { position: absolute;
+                        top: 16px; 
+						left: 320px;
+                        text-align: center; 
+						opacity: 1;
+}
+
+body {font-family: Rubik, Quake;
+}
+ 
+#wrapper { background-color:  #a57358; 
+         
+}
+
+header { color: #000000; 
+        background-color: #97573e;
+		background-image: url(./images/Quake_logo.png);
+	    background-repeat: no-repeat;		
+		background-size: auto 100%;
+        padding: .5em 0 .5em 5.5em;
+	font-family: Quake;
+}
+main {   background-color: #a57358;
+         color: #000000;
+	     padding: 1em; 
+
+}
+aside { text-align: center; }
+footer {  background-color: #97573e;
+         font-size:70%;
+         text-align: center;
+         padding: 0.5em 0;
+}
+img { padding: 1em; }
+h2 { color: #000000; }
+
+/* Styles to configure navigation links as horizontal areas */
+nav ul { list-style-type: none;
+         padding-left: 0; 
+		 border-top: 1px solid #a57358;
+}
+nav li { border-bottom: 1px solid #a57358;  
+         text-align: center;
+		 padding-top: .5em;
+		 padding-bottom: .5em;
+}
+nav a { text-decoration: none;
+		font-weight: bold;
+}
+nav a:link { color: #FEFEFE; }
+nav a:hover { color: #FFFFFF; }
+/* make the current page's link look different */
+nav #page { font-weight: bold;
+            color: #00005D; }
+
+ 
+
+
+
+/* Force older versions of Internet Explorer to display these HTML5 elements with block display. */
+header, nav, main, footer, aside, figure { display: block; }
+
+/* Medium Display */
+@media (min-width: 600px) {
+ nav li { display: inline-block;
+          width: 7em;
+          padding: 0.5em;
+		  border: none; 
+         }
+ nav ul { text-align: center; }
+ main { float: left;
+        width: 75%; }
+ footer { clear: both; }
+ }
+ 
+/* Large Display */
+@media (min-width: 1024px) {
+  nav li { display: block; }
+  nav { float: left; }
+  #wrapper { width: 80%;
+		     margin: auto;
+		     max-width: 1200px;
+  }
+  body { background-color: #241c2c; }
+} 
+	 
+
+</style> 
+</head>
+<body>
+<div id="wrapper">
+  <header>
+    <h1>QUAKE WIKI</h1>
+  </header>
+    <nav>
+	<ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="news.html">News</a></li>
+      <li id="Page">Weapons</a></li>
+      <li><a href="music.html">Music</a></li>
+	 </ul>
+    </nav>    
+  <main><h1 style="font-family: Quake">Weapon Gallery</h1>
+<div id="gallery">
+ <figure>
+  <img src="./images/quakebg.jpg" width="450" height="315" alt="Quake">
+ </figure>
+ <ul>
+   <li><a href="./images/v_axe.png"><img src="./images/v_axe.png" width="100" height="75" alt="axe">
+   <span><img src="./images/v_axe.png" width="400" height="300"
+      alt="Golden Gate Bridge"><br>Axe</span></a>
+   </li>
+     <li><a href="./images/v_shotgun.png"><img src="./images/v_shotgun.png" width="100" height="75" alt="shotgun">
+    <span><img src="./images/v_shotgun.png" width="400" height="300" alt="shotgun"><br>Shotgun</span></a>
+  </li>
+  <li><a href="./images/v_shot2.png"><img src="./images/v_shot2.png" width="100" height="75" alt="Super Shotgun">
+    <span><img src="./images/v_shot2.png" width="400" height="300" alt="Super Shotgun"><br>Super Shotgun</span></a>
+  </li>
+  <li><a href="./images/v_nailgun-removebg-preview.png"><img src="./images/v_nailgun-removebg-preview.png" width="100" height="75" alt="Nailgun">
+    <span><img src="./images/v_nailgun-removebg-preview.png" width="400" height="300" alt="Nailgun"><br>Nailgun</span></a>
+  </li>
+  <li><a href="./images/v_supernailgun-removebg-preview.png"><img src="./images/v_supernailgun-removebg-preview.png" width="100" height="75" alt="Super Nailgun">
+    <span><img src="./images/v_supernailgun-removebg-preview.png" width="400" height="300" alt="Super Nailgun"><br>Super Nailgun</span></a>
+  </li>
+  <li><a href="./images/v_grenadelauncher-removebg-preview.png"><img src="./images/v_grenadelauncher-removebg-preview.png" width="100" height="75" alt="Grenade Launcher">
+    <span><img src="./images/v_grenadelauncher-removebg-preview.png" width="400" height="300" alt="Grenade Launcher"><br>Grenade Launcher</span></a>
+  </li>
+  <li><a href="./images/transparent.png"><img src="./images/transparent.png" width="100" height="75" alt="">
+    <span><img src="./images/transparent.png" width="400" height="300" alt=""><br></span></a>
+  </li>
+ </ul>
+</div>
+</main>
+<aside>
+<p>Welcome to the weapons gallery!<br>make sure only to look, touching could cause something to come loose... or crash the page...<p>
+</aside>
+  <footer>
+	Copyright &copy; 1996-2024<br>Long live Quake!
+  </footer>
+ </div>
+</body>
+</html>
+
+

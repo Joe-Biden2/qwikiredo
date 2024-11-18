@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Quake Wiki</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<style>
+* { box-sizing: border-box;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Quake;
+    src: url(dpquake_.ttf);
+}
+
+@font-face {
+    font-family: Rubik;
+    src: url(Rubik-Medium.ttf);
+    
+}
+
+body {font-family: Rubik, Quake;
+}
+ 
+#wrapper { background-color:  #a57358; 
+         
+}
+
+header { color: #000000; 
+        background-color: #97573e;
+		background-image: url(./images/Quake_logo.png);
+	    background-repeat: no-repeat;		
+		background-size: auto 100%;
+        padding: .5em 0 .5em 5.5em;
+	font-family: Quake;
+}
+main {   background-color: #a57358;
+         color: #000000;
+	     padding: 1em; 
+
+}
+aside { text-align: center; }
+footer {  background-color: #97573e;
+         font-size:70%;
+         text-align: center;
+         padding: 0.5em 0;
+}
+img { padding: 1em; }
+h2 { color: #000000; }
+
+/* Styles to configure navigation links as horizontal areas */
+nav ul { list-style-type: none;
+         padding-left: 0; 
+		 border-top: 1px solid #a57358;
+}
+nav li { border-bottom: 1px solid #a57358;  
+         text-align: center;
+		 padding-top: .5em;
+		 padding-bottom: .5em;
+}
+nav a { text-decoration: none;
+		font-weight: bold;
+}
+nav a:link { color: #FEFEFE; }
+nav a:hover { color: #FFFFFF; }
+/* make the current page's link look different */
+nav #page { font-weight: bold;
+            color: #00005D; }
+
+ 
+
+
+
+/* Force older versions of Internet Explorer to display these HTML5 elements with block display. */
+header, nav, main, footer, aside, figure { display: block; }
+
+/* Medium Display */
+@media (min-width: 600px) {
+ nav li { display: inline-block;
+          width: 7em;
+          padding: 0.5em;
+		  border: none; 
+         }
+ nav ul { text-align: center; }
+ main { float: left;
+        width: 55%; }
+  aside { margin-left: 55%; }
+ footer { clear: both; }
+ }
+ 
+/* Large Display */
+@media (min-width: 1024px) {
+  nav li { display: block; }
+  nav { float: left; }
+  #wrapper { width: 80%;
+		     margin: auto;
+		     max-width: 1200px;
+  }
+  body { background-color: #241c2c; }
+} 
+	 
+
+</style> 
+</head>
+<body>
+<div id="wrapper">
+  <header>
+    <h1>QUAKE WIKI</h1>
+  </header>
+    <nav>
+	<ul> 
+      <li id="page">Home</li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="weapons.html">Weapons</a></li>
+      <li><a href="music.html">Music</a></li>
+	 </ul>
+    </nav>    
+  <main>
+    <h2 style="font-family: Quake">QUAKE WIKI HOME</h2>
+    <p>Unoficcial and smaller Quake "wiki" for my web design class - I hope I do well...</p><br>
+    <h2 style="font-family: Quake">WHAT IS QUAKE</h2>
+    <p>Quake is a first person shooter (FPS) by ID Software, the creators of Wolfenstein 3D and most prominately the Doom FPS games (FPS is kind of their specialty). It's known for its fast paced gameplay and incredible atmosphere.</p><br>
+    <h2 style="font-family: Quake">WHY QUAKE?</h2>
+    <p>This game has had a monumental impact on the FPS genre and gaming as a whole, as its method of rendering polygons for a 3D space is to this day the most efficient way that has been found, along with the game showing that atmosphere can be a part of a video game's identity, something that was looked down upon in the past.</p>
+  </main>
+  <aside>
+    <h2 style="font-family: Quake">RANGER DANCE!</h2>
+    <figure>
+    <img src="./images/quake-ranger.gif">
+    </figure>
+  </aside>
+  <footer>
+	Copyright &copy; 1996-2024<br>Long live Quake!
+  </footer>
+ </div>
+</body>
+</html>
+
+
